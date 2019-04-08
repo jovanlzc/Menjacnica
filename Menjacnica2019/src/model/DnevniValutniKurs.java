@@ -19,18 +19,24 @@ public class DnevniValutniKurs {
 		return valuta;
 	}
 	public void setValuta(Valuta valuta) {
+		if(valuta==null)
+			throw new RuntimeException("Morate proslediti valutu!");
 		this.valuta = valuta;
 	}
 	public Kurs getKurs() {
 		return kurs;
 	}
 	public void setKurs(Kurs kurs) {
+		if(kurs==null)
+			throw new RuntimeException("Morate proslediti kurs!");
 		this.kurs = kurs;
 	}
 	public Date getDatum() {
 		return datum;
 	}
 	public void setDatum(Date datum) {
+		if(datum==null)
+			throw new RuntimeException("Morate proslediti datum!");
 		this.datum = datum;
 	}
 	@Override
